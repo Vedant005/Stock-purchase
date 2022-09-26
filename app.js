@@ -2,7 +2,7 @@ const initialPrice = document.querySelector("#initial-price");
 const stocksQuantity = document.querySelector("#stocks-quantity");
 const currentPrice = document.querySelector("#current-price");
 const submitButton = document.querySelector("#submit-btn");
-const outputBox = document.querySelector("#output");
+const outputBox = document.querySelector("#output-box");
 
 function calculateProfitAndLoss(initial, quantity, current){
     if(initial > current){
