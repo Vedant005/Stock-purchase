@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+*{
+    text-align: center;
+    padding:1rem;
+    background-color: aqua;
+}
+
+
+
+h1{
+    text-align: center;
+
+}
+
+label{
+    display: block;
+    padding-bottom: 0.5rem;
+   
+}
+
+html{
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
