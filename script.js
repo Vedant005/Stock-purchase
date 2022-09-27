@@ -1,18 +1,18 @@
-const initialPrice = document.querySelector("#initial-price");
-const stocksQuantity = document.querySelector("#stocks-quantity");
-const currentPrice = document.querySelector("#current-price");
-const submitBtn = document.querySelector("#submit-btn");
-const outputBox = document.querySelector("#output-box");
+var initialPrice = document.querySelector("#initial-price");
+var stocksQuantity = document.querySelector("#stocks-quantity");
+var currentPrice = document.querySelector("#current-price");
+var submitBtn = document.querySelector("#submit-btn");
+var outputBox = document.querySelector("#output-box");
 
-submitBtn.addEventListener('click',submitHandler);
+submitBtn.addEventListener("click", submitHandler);
 function submitHandler(){
-const ip = Number(initialPrice.value);
+var ip = Number(initialPrice.value);
 
-const qty = Number(stockQuanity.value);
+var qty = Number(stockQuanity.value);
 
-const curr = Number(currentlPrice.value);
+var curr = Number(currentlPrice.value);
 
-  calculateProfitAndLoss(ip,qty,curr);
+  calculateProfitAndLoss(ip, qty, curr);
 
 }
 function calculateProfitAndLoss(initial, quantity, current){
