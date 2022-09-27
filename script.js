@@ -4,17 +4,7 @@ var currentPrice = document.querySelector("#current-price");
 var submitBtn = document.querySelector("#submit-btn");
 var outputBox = document.querySelector("#output-box");
 
-submitBtn.addEventListener("click", submitHandler);
-function submitHandler(){
-var ip = Number(initialPrice.value);
 
-var qty = Number(stockQuanity.value);
-
-var curr = Number(currentlPrice.value);
-
-  calculateProfitAndLoss(ip, qty, curr);
-
-}
 function calculateProfitAndLoss(initial, quantity, current){
 
     if (initial > current){
@@ -32,6 +22,19 @@ function calculateProfitAndLoss(initial, quantity, current){
         showOutput(' NO PAIN,NO GAIN')
     }
 }
+function submitHandler(){
+  var ip = Number(initialPrice.value);
+  
+  var qty = Number(stockQuanity.value);
+  
+  var curr = Number(currentlPrice.value);
+  
+    calculateProfitAndLoss(ip, qty, curr);
+  
+  }
+
+  submitBtn.addEventListener("click", submitHandler);
+
 
 function showOutput(message) {
     output.innerText = message;
