@@ -6,7 +6,7 @@ var outputBox = document.querySelector("#output-box");
 
 submitBtn.addEventListener('click', submitHandler);
 function submitHandler(){
-  var ip = Number(initialPrice.value);
+  var ip = Number(initialPrice.value) ;
   
   var qty = Number(stocksQuantity.value);
   
@@ -37,7 +37,7 @@ function calculateProfitAndLoss(initial, quantity, current){
 
 
 function showOutput(message) {
-    output.innerText = message;
+    showOutput.innerText = message;
   }
 
 
