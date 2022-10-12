@@ -18,27 +18,25 @@ function submitHandler(){
 
 
 function calculateProfitAndLoss(initial, quantity, current){
-
+  
     if (initial > current){ 
       var loss = (initial - current) * quantity;
-      var lossPercentage = (loss / initial) * 100;
-      showOutputBox(' Hey, the loss is ${loss} and the percentage is ${losssPercentage}%');
+      var lossPercentage = ( loss / initial) * 100
+  outputBox.innerText="Hey, the loss is $ " + loss + " and the percentage is $ "+ lossPercentage + "%" ;
     }
     else if ( current > initial){
         var profit = (current - initial)* quantity;
         var profitPercentage = (profit / initial) * 100;
 
-        showOutputBox('Hey, the profit id ${profit} and the percentage is &{profitPercentage}% ');
+    outputBox.innerText="Hey, the profit is $ " + profit + "and the percentage is $ " + profitPercentage + "% ";
     }
     else{
-        showOutputBox(' NO PAIN,NO GAIN')
+        outputBox.innerText =' NO PAIN,NO GAIN'
     }
 }
 
 
-function showOutputBox(message) {
-    showOutputBox.innerText = message;
-  }
+
 
 
 
