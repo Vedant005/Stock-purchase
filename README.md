@@ -7,6 +7,6 @@ Aa app to show profit or loss on your stocks purchase
 3)JAVASCRIPT
 
 # APP LIVE LINK:
-
+https://stocks-purchase-app.netlify.app/
 # SCREENSHOT
 
